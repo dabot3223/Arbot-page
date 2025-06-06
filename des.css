@@ -1,0 +1,38 @@
+#box{
+	width:80%;
+	height:79.8%;
+	border:solid white 1px;
+}
+.sbox{
+	width:5%;
+	height:9.1%;
+	margin-left:px;
+	margin-top:px;
+	float:left;
+	background-color:black;
+}
+#bbox{
+	width:900px;
+	height:450px;
+	border:solid white 1px;
+}
+#sbox{
+	width:10%;
+	height:20%;
+	border:solid white 1px;
+	position:relative;
+	right:45.5%;
+	bottom:75%;
+}
+#libox{
+	width:10%;
+	height:20%;
+	border:solid white 1px;
+	position:relative;
+	left:45.5%;
+	bottom:95%;
+}
+#pl{
+	position:relative;
+	bottom:50%;
+}
