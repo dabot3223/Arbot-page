@@ -1,10 +1,10 @@
 # Android / Gradle
-android/.gradle/
+**/.gradle/
 android/**/build/
 android/local.properties
 android/.idea/
 android/captures/
-android/.kotlin/
+**/.kotlin/
 *.iml
 *.apk
 *.aab
