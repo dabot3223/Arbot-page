@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Release: HTTPS only, trust only system CAs (user-installed CAs such as
+     interception proxies are ignored). Certificate pinning is additionally
+     enforced in OkHttp from BuildConfig.CERT_PINS, and every API body is
+     end-to-end encrypted with the pinned envelope key. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

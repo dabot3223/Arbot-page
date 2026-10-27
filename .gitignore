@@ -1,0 +1,25 @@
+# Android / Gradle
+**/.gradle/
+android/**/build/
+android/local.properties
+android/.idea/
+android/captures/
+**/.kotlin/
+*.iml
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Secrets – never commit
+supabase/.env*
+!supabase/.env.example
+supabase/.temp/
+supabase/.branches/
+**/google-services.json
+**/service-account*.json
+
+# Node
+node_modules/
+
+.DS_Store

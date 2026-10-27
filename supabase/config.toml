@@ -1,0 +1,46 @@
+# Supabase project configuration for Ar_B0T.
+# Local dev:  supabase start && supabase functions serve --env-file supabase/.env.local
+# Deploy:     see docs/SETUP.md
+
+project_id = "arbot"
+
+[api]
+enabled = true
+port = 54321
+# The app never calls PostgREST directly. `public` stays exposed only so the
+# edge functions (service role) can reach it; anon/authenticated have no
+# privileges on any table or function (see migrations).
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 100
+
+[db]
+port = 54322
+major_version = 17
+
+[realtime]
+# Not used – disabled to shrink the attack surface.
+enabled = false
+
+[storage]
+enabled = false
+
+[auth]
+# Players authenticate with hardware-backed device keys inside the encrypted
+# envelope, not with Supabase Auth. Sign-ups are disabled so nobody can create
+# auth users with the public anon key.
+enabled = true
+enable_signup = false
+enable_anonymous_sign_ins = false
+
+[auth.email]
+enable_signup = false
+
+[functions.api]
+# Authentication happens inside the envelope (device signature), so the
+# gateway JWT check is off. The function rejects anything it cannot decrypt.
+verify_jwt = false
+
+[functions.play-rtdn]
+# Authenticated with Google's Pub/Sub OIDC token instead of a Supabase JWT.
+verify_jwt = false
