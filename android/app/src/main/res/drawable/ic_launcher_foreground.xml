@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ar_B0T robot head on the 108dp adaptive icon canvas (safe zone 66dp). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- antenna -->
+    <path android:fillColor="#FF39FF88" android:pathData="M52.5,28h3v9h-3z" />
+    <path android:fillColor="#FFFF3DCB" android:pathData="M54,22a4,4 0,1 1,0 8a4,4 0,1 1,0 -8z" />
+    <!-- head -->
+    <path android:fillColor="#FF39FF88"
+        android:pathData="M38,36h32a8,8 0,0 1,8 8v22a8,8 0,0 1,-8 8h-32a8,8 0,0 1,-8 -8v-22a8,8 0,0 1,8 -8z" />
+    <!-- visor -->
+    <path android:fillColor="#FF070B1A"
+        android:pathData="M40,44h28a4,4 0,0 1,4 4v8a4,4 0,0 1,-4 4h-28a4,4 0,0 1,-4 -4v-8a4,4 0,0 1,4 -4z" />
+    <!-- eyes -->
+    <path android:fillColor="#FF22E4FF" android:pathData="M47,49a3,3 0,1 1,0 6a3,3 0,1 1,0 -6z" />
+    <path android:fillColor="#FF22E4FF" android:pathData="M61,49a3,3 0,1 1,0 6a3,3 0,1 1,0 -6z" />
+    <!-- mouth grille -->
+    <path android:fillColor="#FF070B1A" android:pathData="M45,65h18v3h-18z" />
+</vector>
